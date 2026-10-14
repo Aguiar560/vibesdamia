@@ -37,3 +37,4 @@ h2 { margin-top: 2rem; font-size: 1.25rem; }
 a { color: var(--accent); }
 footer { margin-top: 40px; font-size: .9rem; color: var(--muted); }
 .lang { color: var(--muted); font-size: .95rem; border-top: 1px solid rgba(127,127,127,.3); margin-top: 2.5rem; padding-top: 1rem; }
+.links a.yt { background: #ff0000; color: #fff; }
