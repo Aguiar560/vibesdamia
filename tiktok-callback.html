@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Autorização concluída · Vibes da Mia</title>
+<link rel="icon" href="foto-perfil.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <img class="avatar" src="foto-perfil.jpg" alt="" width="120" height="120">
+  <h1 id="titulo">Autorização concluída</h1>
+  <p id="msg">O Vibes da Mia Uploader recebeu a autorização do TikTok. Pode fechar esta página.</p>
+  <footer><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></footer>
+</main>
+<script>
+  const p = new URLSearchParams(location.search);
+  if (p.get('error')) {
+    document.getElementById('titulo').textContent = 'Autorização não concluída';
+    document.getElementById('msg').textContent = 'O acesso não foi autorizado (' + p.get('error') + '). Pode fechar esta página.';
+  }
+</script>
+</body>
+</html>
